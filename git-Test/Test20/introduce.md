@@ -1,0 +1,39 @@
+### java8新特性
+#### stream API
+- stream流实例化的方式
+    - 通过集合
+    - 通过数组
+    - 通过Stream的of()方法
+    - 创建无限流
+- stream流的中间操作
+    - 筛选与切片
+        - filter排除
+        - limit截断
+        - skip跳过
+        - distinct去重
+    - 映射
+        - map对流中的每个元素进行转换
+        - flatMap对流中每个元素进行平铺后，形成多个流合在一起
+    - 排序
+        - sorted无参 自然排序
+        - sorted+Comparator 定义排序
+- stream流的终止操作
+    - 匹配与查找
+        - allMatch 检查是否所有元素满足条件
+        - anyMatch 检查是否至少存在一个元素满足条件
+        - noneMatch 检查是否没有元素满足条件
+        - findFirst 查找第一个元素
+        - count 统计流中的元素总个数
+        - max 查找流中最大值
+        - min 查找流中最小值
+        - forEach 内部遍历
+    - 归约
+        - reduce+两个参数 将流中元素反复结合起来,得到一个指定类型的值
+        - reduce+一个参数 将流中元素反复结合起来,得到一个Optional类型的值
+    - 收集
+        - collect 将流转换为其他形式,通过实现Collector接口,对流中的元素进行汇总
+#### Optional类
+- 专门用于处理null的类,防止空指向异常
+    - ofNull 允许null存在
+    - orElse 有值则返回该值,否则返回指定的other对象
+    - of 创建Optional实例,需要一个非空任意类型的值作为参数
