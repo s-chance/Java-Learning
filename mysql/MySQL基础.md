@@ -548,8 +548,3 @@ select grade,avg(score) from coder group by grade having avg(score)>80;
 ```
 
 
-
-
-
-
-
