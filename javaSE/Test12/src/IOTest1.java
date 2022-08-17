@@ -6,7 +6,7 @@ public class IOTest1 {
     public static void main(String[] args) {
         //字符流操作 读
         //读取操作对应字符流输入流FileReader(需要抛出IOException)
-        File file1 = new File("D:\\git-repo\\git\\git-Test\\Test12\\test01.txt");
+        File file1 = new File("D:\\git-repo\\Java-Learning\\javaSE\\Test12\\test01.txt");
         System.out.println("file1 = " + file1);
         FileReader fileReader = null;
 
@@ -39,7 +39,7 @@ public class IOTest1 {
         //优化版
         //字符流操作 读
         //读取操作对应字符流输入流FileReader(需要抛出IOException)
-        File file2 = new File("D:\\git-repo\\git\\git-Test\\Test12\\test01.txt");
+        File file2 = new File("D:\\git-repo\\Java-Learning\\javaSE\\Test12\\test01.txt");
         System.out.println("file1 = " + file1);
         FileReader fileReader2 = null;
 
@@ -68,6 +68,5 @@ public class IOTest1 {
                 e.printStackTrace();
             }
         }
-
     }
 }

@@ -36,7 +36,7 @@ public class URLTest2 {
         //获取输入流
         InputStream inputStream = urlConnection.getInputStream();
         //保存到本地
-        FileOutputStream fileOutputStream = new FileOutputStream("D:\\git-repo\\git\\git-Test\\Test16\\url.jpg");
+        FileOutputStream fileOutputStream = new FileOutputStream("D:\\git-repo\\Java-Learning\\javaSE\\Test16\\url.jpg");
         byte[] bytes = new byte[1024];
         int len;
         while ((len = inputStream.read(bytes)) != -1) {

@@ -40,9 +40,8 @@ public class Test {
 
 
         //关于protected的补充：protected对本包和子类可见，那么对于子类在另外的包里，它是否可见？
-        //可以看见通过继承的protected属性依旧可以访问,但是对父类实例化的属性却无法访问
-        People p = new People();
-        student.f(p);
-        System.out.println(p.name);
+        //当子类与父类不在同一个包里时,观察子类可以发现继承的protected属性依旧可以访问,但是对父类实例化的属性却无法访问
+        student.f();
+        System.out.println(student.getAge());
     }
 }

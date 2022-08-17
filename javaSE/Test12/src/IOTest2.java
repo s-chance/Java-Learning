@@ -7,8 +7,8 @@ public class IOTest2 {
     public static void main(String[] args) {
         //字符流实现完整的读写操作   相当于实现了一次复制粘贴   被写入的文件如果不存在会自动创建
 
-        File file1 = new File("D:\\git-repo\\git\\git-Test\\Test12\\test01.txt");
-        File file2 = new File("D:\\git-repo\\git\\git-Test\\Test12\\test02.txt");
+        File file1 = new File("D:\\git-repo\\Java-Learning\\javaSE\\Test12\\test01.txt");
+        File file2 = new File("D:\\git-repo\\Java-Learning\\javaSE\\Test12\\test02.txt");
         FileReader fileReader = null;
         FileWriter fileWriter = null;
 

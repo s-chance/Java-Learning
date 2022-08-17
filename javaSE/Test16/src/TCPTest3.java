@@ -19,7 +19,7 @@ public class TCPTest3 {
         //获取输出流
         OutputStream outputStream = socket.getOutputStream();
         //获取输入流
-        FileInputStream fileInputStream = new FileInputStream(new File("D:\\git-repo\\git\\git-Test\\Test16\\1.jpg"));
+        FileInputStream fileInputStream = new FileInputStream(new File("D:\\git-repo\\Java-Learning\\javaSE\\Test16\\1.jpg"));
         byte[] bytes = new byte[1024];
         int len;
         while ((len = fileInputStream.read(bytes)) != -1) {
@@ -55,7 +55,7 @@ public class TCPTest3 {
         //获取输入流
         InputStream inputStream = accept.getInputStream();
         //获取输出流
-        FileOutputStream fileOutputStream = new FileOutputStream(new File("D:\\git-repo\\git\\git-Test\\Test16\\TCP3434.jpg"));
+        FileOutputStream fileOutputStream = new FileOutputStream(new File("D:\\git-repo\\Java-Learning\\javaSE\\Test16\\2.jpg"));
         //读写
         byte[] bytes = new byte[1024];
         int len;

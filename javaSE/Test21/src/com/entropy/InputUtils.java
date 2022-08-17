@@ -9,7 +9,7 @@ public class InputUtils {
         System.out.println(msg);
         Scanner scanner = new Scanner(System.in);
         //用hasNextInt()作为判断下一个输入是否为数字需要配合next()方法使用
-        //hasNextInt()函数大体意思表示scanner当前的标记的输入是否为int,并不会自动的移动标记
+        //hasNextInt()函数大体意思表示scanner当前的标记的输入是否为int,并不会自动移动标记
         //要实现hasNextInt的读取的标记位置的改变,可以用scanner.next()移动
         while (!scanner.hasNextInt()) {
             scanner.next();

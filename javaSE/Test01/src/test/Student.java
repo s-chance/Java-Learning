@@ -33,7 +33,6 @@ public class Student extends People {
         else {
             this.age = age;
         }
-
     }
 
     public void setName(String name) {
@@ -51,8 +50,11 @@ public class Student extends People {
         System.out.println("struct for student");
     }
 
-    public void f(People p) {
-        p.name="kk";
-        p.age=11;
+    public void f() {
+        age=21; //子类继承下来的protected属性
+        work="learn";
+        People p = new People();
+        p.age=41; //父类实例化的protected属性,当子类和父类不在同一个包里时无法访问
+        p.work="everything";
     }
 }

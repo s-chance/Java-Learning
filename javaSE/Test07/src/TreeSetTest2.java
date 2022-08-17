@@ -20,9 +20,9 @@ public class TreeSetTest2 {
             }
         };
 
-        //TreeSet<User> treeSet = new TreeSet();
+//        TreeSet<User> treeSet = new TreeSet(com);
 
-        //comparator的实现方法还可以直接写在TreeSet后面
+        //comparator的实现方法还可以直接写在TreeSet里面
         TreeSet<User> treeSet = new TreeSet<>(new Comparator<User>() {
             @Override
             public int compare(User o1, User o2) {
@@ -35,7 +35,7 @@ public class TreeSetTest2 {
                 }
             }
         });
-        treeSet.add(new User("dd",33));
+        treeSet.add(new User("dd",36));
         treeSet.add(new User("dd",34));
         treeSet.add(new User("zero",0));
         treeSet.add(new User("tzo",201));
@@ -43,6 +43,5 @@ public class TreeSetTest2 {
         for (User user : treeSet) {
             System.out.println("user = " + user);
         }
-
     }
 }

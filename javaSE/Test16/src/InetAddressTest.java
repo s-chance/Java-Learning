@@ -30,10 +30,11 @@ public class InetAddressTest {
             //IP
             System.out.println(name.getHostAddress());
 
+            //localhost域名指向的本机地址(回环测试地址)
             InetAddress address = InetAddress.getByName("localhost");
             System.out.println(address);
 
-            //方式二:getLocalHost方法,获取的是本地的IP
+            //方式二:getLocalHost方法,获取的是本机的私有IP地址(局域网地址)
             InetAddress host = InetAddress.getLocalHost();
             System.out.println(host);
         } catch (UnknownHostException e) {

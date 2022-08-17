@@ -74,6 +74,5 @@ public class User implements Action,Comparable {
         } else {
             throw new RuntimeException("can't cast");
         }
-
     }
 }
