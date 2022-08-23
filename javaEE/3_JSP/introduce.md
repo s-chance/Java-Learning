@@ -6,7 +6,7 @@
    conf:配置文件目录,非常重要,不要轻易改动  
    lib:运行tomcat所需jar包目录  
    logs:日志目录  
-   temp:临时文件目录
+   temp:临时文件目录  
    webapps:应用发布目录,启动tomcat后能够通过url访问到里面的资源  
    work:工作目录
 3. Tomcat的基本使用  

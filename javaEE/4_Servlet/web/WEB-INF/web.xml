@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--配置Servlet-->
+    <!--servlet标签给tomcat配置Servlet程序-->
+    <servlet>
+        <!--servlet-name标签给Servlet程序起一个别名(一般用类名即可)-->
+        <servlet-name>ServletTest</servlet-name>
+        <!--servlet-class是Servlet程序的全类名-->
+        <servlet-class>com.entropy.test.ServletTest</servlet-class>
+    </servlet>
+    <!--servlet-mapping标签给Servlet程序配置访问地址-->
+    <servlet-mapping>
+        <!--servlet-name标签在这里的作用是绑定指定的Servlet程序和当前配置的地址-->
+        <servlet-name>ServletTest</servlet-name>
+        <!--url-pattern标签配置访问地址
+	    / 斜杠在服务器解析的时候,表示地址为http://ip:port/工程路径
+	    /hello表示地址为http://ip:port/工程路径/hello-->
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+</web-app>
