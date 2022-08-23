@@ -6,7 +6,7 @@
 #### 准备工作
 jar包引入:在IDEA的Module下新建一个name为lib的Directory,将下载的.jar文件粘贴到该Directory下,右键该文件选择add as libraries
 #### 开发步骤
-1. 注册驱动
+1. 注册驱动(需要根据自己配置的MySQL环境修改参数)
 2. 获取连接
 3. 获取数据库操作对象
 4. 执行sql语句

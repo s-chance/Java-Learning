@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1_JDBC_Base/1_JDBC_Base.iml" filepath="$PROJECT_DIR$/1_JDBC_Base/1_JDBC_Base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_JDBC_Pro/2_JDBC_Pro.iml" filepath="$PROJECT_DIR$/2_JDBC_Pro/2_JDBC_Pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_JSP/3_JSP.iml" filepath="$PROJECT_DIR$/3_JSP/3_JSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEE.iml" filepath="$PROJECT_DIR$/javaEE.iml" />
+    </modules>
+  </component>
+</project>
