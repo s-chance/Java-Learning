@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码测试</title>
+    <script>
+        //验证码更新
+        window.onload = function () {
+            //获取图片对象
+            var image = document.getElementById("verifyCode");
+            //绑定点击事件
+            image.onclick = function () {
+                //根据时间更新验证码
+                var date = new Date().getTime();
+                //重置验证码src属性
+                image.src = "/5_Http_Request_Response_war_exploded/verify?"+date;
+
+            }
+        }
+    </script>
+</head>
+<body>
+<div>
+    <h1>自制验证码</h1>
+    <img id="verifyCode" src="/5_Http_Request_Response_war_exploded/verify">
+</div>
+<div>
+    <h1>模板,素材来源于网络</h1>
+    <img id="code" src="/5_Http_Request_Response_war_exploded/code">
+</div>
+</body>
+</html>
