@@ -73,4 +73,3 @@
    <form action="../servletPath">
    </form>
    ```
-### 补充
