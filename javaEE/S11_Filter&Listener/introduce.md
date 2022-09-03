@@ -34,7 +34,7 @@ servlet程序:
 通过注解配置,则由类名的字符串比较值大小,从小到大依次执行  
 通过web.xml,则由<filter-mapping>在web.xml中配置的位置,从上到下依次执行
 
-##### 案例
+##### 案例  
 [登录鉴权](src/com/entropy/web/demo/filter/LoginFilter.java)、[敏感词过滤](src/com/entropy/web/demo/filter/WordFilter.java)  
 关于敏感词过滤参考了动态代理设计模式增强了getParameter方法,使得在其获取前端参数时通过动态代理过滤掉敏感词(动态代理[简单示例](src/com/entropy/test/ProxyTest.java))
 ---
