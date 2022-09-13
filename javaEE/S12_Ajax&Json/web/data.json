@@ -1,0 +1,19 @@
+{
+  "name": "master",
+  "age": 23,
+  "gender": "男",
+
+  "nested1": [
+    {"name": "a", "age": 1, "gender": true},
+    {"name": "b", "age": 2, "gender": true},
+    {"name": "c", "age": 3, "gender": false}
+  ],
+
+  "nested2": {
+   "person": [
+     {"name": "a", "age": 1, "gender": true},
+     {"name": "b", "age": 2, "gender": true},
+     {"name": "c", "age": 3, "gender": false}
+   ]
+  }
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        function post() {
+            $.post("ajax", {name: "pear"}, function (data) {
+                alert(data);
+            }, "text");
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="发送post请求" onclick="post();">
+</body>
+</html>

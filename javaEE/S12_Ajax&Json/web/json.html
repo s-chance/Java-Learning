@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //定义基本格式
+        var person = {"name": "aa", age: 23, 'gender': true};
+
+        //获取数据, 两种写法
+        var name = person.name;
+        var name = person["name"];
+        // alert(name);
+
+        //循环获取person中所有的数据
+        for (var key in person) {
+            //这里的key就相当于字符串, 需要以[key]的形式才能获取值
+            // alert(key + ":" + person[key]);
+        }
+
+        //嵌套格式:{[]}对象里嵌套数组, 实际上这里是对象里嵌套数组对象
+        var persons = {
+            "persons": [
+                {"name": "a", "age": 23, "gender": true},
+                {"name": "b", "age": 24, "gender": true},
+                {"name": "c", "age": 25, "gender": false}
+            ]
+        };
+
+        var c = persons.persons[2].name;
+        // alert(c);
+
+        for (var i = 0; i < persons.persons.length; i++) {
+            var data = persons.persons[i];
+            for (var key in data) {
+                alert(key + ":" + data[key]);
+            }
+        }
+
+        //嵌套格式:[{}]数组里嵌套对象, 即数组对象
+        var ps = [
+            {"name": "a", "age": 23, "gender": true},
+            {"name": "b", "age": 24, "gender": true},
+            {"name": "c", "age": 25, "gender": false}
+        ];
+
+        var b = ps[1].name;
+        // alert(b);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            //绑定失去焦点事件
+            $("#name").blur(function () {
+                var name = $(this).val();
+
+                //发送ajax请求, 即时验证用户名
+                $.get("check", {name:name}, function (data) {
+
+                    var span = $("#msg");
+                    if (data.exist) {
+                        span.css("color", "red");
+                        span.html(data.msg);
+                    } else {
+                        span.css("color", "green");
+                        span.html(data.msg);
+                    }
+                }, "json");
+            });
+        });
+    </script>
+</head>
+<body>
+<div style="background-color: grey;width: 400px;height: 200px;border: 1px gray solid;margin: auto">
+    <form style="text-align: center">
+        <input type="text" id="name" name="name" placeholder="请输入用户名">
+        <br><span id="msg"></span><br>
+        <input type="password" id="password" name="password" placeholder="请输入密码"><br><br>
+        <input type="submit" value="register">
+    </form>
+</div>
+</body>
+</html>

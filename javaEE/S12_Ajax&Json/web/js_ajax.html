@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //定义方法
+        function ajax() {
+            //发送异步请求
+            //1.创建核心对象
+            var xhttp;
+            if (window.XMLHttpRequest) {
+                xhttp = new XMLHttpRequest();
+            } else {
+                //针对不支持XMLHttpRequest对象的浏览器
+                //创建ActiveXObject对象
+                xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            //2.建立连接
+            //请求方式GET/POST  请求URL  异步/同步(true/false)
+            xhttp.open("GET", "ajax?name=tom", true);
+
+            //3.发送请求
+            xhttp.send();
+
+            //4.接受并处理服务器的响应结果
+            //当xhttp对象的就绪状态发送变化时, 触发onreadystatechange事件
+            xhttp.onreadystatechange = function () {
+                //判断readyStage就绪状态是否为4, 判断status响应状态码是否为200
+                if (this.readyState == 4 && this.status == 200) {
+                    //通过responseTest获取服务器响应结果
+                    var responseText = this.responseText;
+                    alert(responseText);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="发送异步请求" onclick="ajax();">
+</body>
+</html>
