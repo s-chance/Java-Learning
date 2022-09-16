@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            //发送ajax请求
+            $.get("province", {}, function (data) {
+                var province = $("#province");
+                //遍历
+                $(data).each(function () {
+                    //创建option元素
+                    var option = "<option name='" + this.id + "'>" + this.name + "</option>";
+                    //添加到父元素内部末尾
+                    province.append(option);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<h5>province?</h5>
+<select id="province">
+
+</select>
+</body>
+</html>
