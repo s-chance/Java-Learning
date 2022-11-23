@@ -22,9 +22,9 @@ public class IOTest2 {
             char[] ch = new char[5];
 
             //读取并写入
-            int data;
-            while ((data = fileReader.read(ch)) != -1) {
-                String s = new String(ch, 0, data);
+            int len;
+            while ((len = fileReader.read(ch)) != -1) {
+                String s = new String(ch, 0, len);
                 fileWriter.write(s);
             }
         } catch (IOException e) {

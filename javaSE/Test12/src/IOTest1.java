@@ -15,11 +15,11 @@ public class IOTest1 {
             fileReader = new FileReader(file1);
 
             //读取
-            int len; //记录当前所读取字符的十六进制值
+            int data; //记录当前所读取字符的ASCII值
 
             //read方法读取到文件末尾返回-1
-            while ((len = fileReader.read()) != -1) {
-                System.out.println((char)len);
+            while ((data = fileReader.read()) != -1) {
+                System.out.println((char)data);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -51,11 +51,11 @@ public class IOTest1 {
             char[] ch = new char[5];
 
             //读取
-            int data; //记录当前所读取字符的十六进制值
+            int len; //记录当前所读取字符的数量
 
             //read方法读取到文件末尾返回-1
-            while ((data = fileReader.read(ch)) != -1) {
-                String s = new String(ch, 0, data);
+            while ((len = fileReader.read(ch)) != -1) {
+                String s = new String(ch, 0, len);
                 System.out.println(s);
             }
         } catch (IOException e) {
